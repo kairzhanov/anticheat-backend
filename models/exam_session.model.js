@@ -41,7 +41,7 @@ exports.findById = (id) => {
 
 exports.createSession = (sessionData) => {
     const session = new SessionModel(sessionData);
-    return session.save();
+    return session.save();npm
 };
 
 exports.patchSession = (id, sessionData) => {

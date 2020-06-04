@@ -41,7 +41,7 @@ router.route('/exams/:examId')
     .patch([AuthMiddleware.validJwtNeeded, ExamsController.patchById])
     .delete([AuthMiddleware.validJwtNeeded, ExamsController.removeById]);
 
-    router.route('/sessions/')
+router.route('/sessions/')
     .get([AuthMiddleware.validJwtNeeded, SessionController.list])    
     .post([AuthMiddleware.validJwtNeeded, SessionController.insert]);
         
