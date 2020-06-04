@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/anticheat', { useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/anticheat' || 'mongodb://heroku_bd8gmkx3:TPB!4ZqD7FDMv5y@ds125574.mlab.com:25574/heroku_bd8gmkx3', { useNewUrlParser: true});
 var db = mongoose.connection;
 
 // Added check for DB connection
